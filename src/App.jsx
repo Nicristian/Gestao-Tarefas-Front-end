@@ -1,7 +1,9 @@
-import Cadastro from "./Cadastro/Cadastro"
+import Cadastro from "./Cadastro/Cadastro";
 function App() {
   return (
-    <Cadastro/>
-  )
+    <div className="firs-container">
+      <Cadastro />
+    </div>
+  );
 }
-export default App
+export default App;
