@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "../Cadastro/cadastro.css";
-const Cadastro = () => {
+import "../Login/login.css";
+const Login = () => {
   const [formData, setFormData] = useState({
     usuario: "",
     senha: "",
-    confirmarSenha: "",
   });
 
   const navigate = useNavigate();
@@ -21,21 +20,17 @@ const Cadastro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.senha !== formData.confirmarSenha) {
-      alert("As senhas não coincidem!");
+    if (formData.senha == formData.confirmarSenha) {
+
       return;
-
-      
     }
-    
-    navigate("/inicio", { state: { usuario: formData.usuario } });
 
+    navigate("/inicio", { state: { usuario: formData.usuario } });
 
   };
 
-
-  const handleLoginClick = () => {
-    navigate("/login"); // Redireciona para a rota '/login'
+  const handleCadastroClick = () => {
+    navigate("/"); // Redireciona para a rota '/login'
   };
 
   return (
@@ -43,12 +38,12 @@ const Cadastro = () => {
       <div className="cadastro-container">
         <div className="cadastro-box-left">
           <h1>BEM VINDO</h1>
-          <h2>CADASTRAR-SE</h2>
+          <h2>Novo Login</h2>
 
-          <button className="login" onClick={handleLoginClick}>Login</button>
+          <button className="login" onClick={handleCadastroClick}>Cadastra-se</button>
         </div>
         <div className="cadastro-box-rigt">
-          <h2>CADASTRAR-SE</h2>
+          <h2>Faça Login</h2>
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -75,18 +70,6 @@ const Cadastro = () => {
               />
             </div>
 
-            <div className="form-group">
-              <input
-                type="password"
-                placeholder="Confirmar Senha"
-                id="confirmarSenha"
-                name="confirmarSenha"
-                value={formData.confirmarSenha}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
             <button type="submit" className="entrar-btn">
               ENTRAR
             </button>
@@ -97,4 +80,4 @@ const Cadastro = () => {
   );
 };
 
-export default Cadastro;
+export default Login;
