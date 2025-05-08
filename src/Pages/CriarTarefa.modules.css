@@ -1,0 +1,98 @@
+.main-content {
+    flex: 1;
+    padding: 70px 10px 10px 130px;
+    display: flex;
+    flex-direction: column; /* Alinha os filhos verticalmente */
+    gap: 20px; /* Espaço entre os elementos filhos */
+  }
+
+  .main-content h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+
+  .from-container{
+    display: flex;
+    gap: 230px;
+    margin: 0;
+  }
+
+  
+
+  .title {
+    display: flex;          /* Ativa o Flexbox */
+    gap: 400px;/* Mantém o espaçamento inferior */
+    margin-bottom: 110px;
+    text-align: center;
+  }
+  
+  .title h2 {
+    margin: 0;              /* Remove margem padrão do h2 */
+    color: #2c3e50;         /* Mantém a cor do seu design original */
+  }
+  
+  .title span {
+    font-size: 20px;        /* Tamanho adequado para o ícone */
+    cursor: pointer;        /* Muda o cursor para pointer quando hover */
+  }
+  
+  .task-form {
+
+    padding: 5px;
+    border-radius: 8px;
+
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: bold;
+    
+  }
+
+  .left{
+    text-align: left;
+  }
+  
+  .form-group input[type="date"],
+  .form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+  
+  .submit-btn {
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: right;
+    float: right; /* Flutua à direita */
+    clear: both; /* Evita que outros elementos flutuem ao lado */
+  }
+  
+  .submit-btn:hover {
+    background-color: #717171;
+  }
+
+  textarea{
+    background-color: #d2d2d2;
+    border-radius: 12px;
+  }

@@ -2,10 +2,13 @@
 import React from 'react'
 // Importa o hook useState do React para gerenciar estados
 import { useState } from 'react';
+
 // Importa o ícone de busca da biblioteca Lucide
 import { Search } from 'lucide-react';
+
+import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 // Importa o arquivo CSS específico para este componente
-import "../Agenda/Agenda.modules.css";
+import "../Pages/Agenda.modules.css";
 
 // Define o componente funcional Agenda
 const Agenda = () => {
@@ -45,7 +48,7 @@ const Agenda = () => {
             onClick={handleAddTask} // Chama a função ao ser clicado
           >
             {/* Ícone de "+" e texto do botão */}
-            <span className='buttonPlus'>+</span> Criar Tarefas
+           <Link className="nav-link" to="/criarTarefa"><span className='buttonPlus'>+</span> Criar Tarefas</Link> 
           </button>
           {/* Container da barra de busca (apenas ícone por enquanto) */}
           <div className='searchContainer'>

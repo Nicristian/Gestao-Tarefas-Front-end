@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Importa os estilos CSS específicos do componente Cadastro
-import "../Cadastro/cadastro.modules.css";
+import "../Pages/Cadastro.modules.css";
 
 const Cadastro = ({setIsLoggedIn}) => {
   // Estado local para armazenar os dados do formulário

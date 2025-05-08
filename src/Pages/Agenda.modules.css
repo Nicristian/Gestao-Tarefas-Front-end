@@ -5,6 +5,15 @@
     background-color: white;
   }
 
+  .nav-link,
+.nav-link:visited,
+.nav-link:active,
+.nav-link:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
   .mainContent {
     flex: 1;
     display: flex;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Importa o arquivo de estilos CSS
-import "../Login/login.modules.css";
+import "../Pages/login.modules.css";
 
 const Login = ({setIsLoggedIn }) => {
   // Estado local para armazenar os dados do formulário (usuário e senha)
@@ -31,8 +31,9 @@ const handleSubmit = (e) => {
 
     // 👇 Simulação de validação de login (substitua por sua lógica real)
     if (formData.usuario && formData.senha) {
-      setIsLoggedIn(true); // Atualiza o estado de login
       navigate("/home", { state: { usuario: formData.usuario } });
+      setIsLoggedIn(true); // Atualiza o estado de login
+
       alert("Login efetuado com sucesso!");
     } else {
       alert("Preencha todos os campos!");
