@@ -1,0 +1,69 @@
+    .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .header{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .createButton{
+    background-color: #6B7280;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .buttonPlus {
+    margin-right: 4px;
+  }
+  .searchContainer {
+    padding: 8px;
+  }
+  .calendarContainer {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .calendarGrid {
+    border-top: 1px solid #D1D5DB;
+  }
+  .hourRow{
+    display: flex;
+  }
+  .hourCell{
+    width: 80px;
+    padding: 16px;
+    text-align: right;
+    padding-right: 16px;
+    font-weight: bold;
+  }
+  .gridContainer{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gridCell{
+    border-right: 1px solid #D1D5DB;
+    border-bottom: 1px solid #D1D5DB;
+    height: 64px;
+  }
+  .lastGridCell {
+    height: 64px;
+    border-bottom: 1px solid #D1D5DB;
+  }

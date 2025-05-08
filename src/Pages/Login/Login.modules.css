@@ -4,8 +4,8 @@ body, #root {
     min-height: 100vh;
   }
 
-.first-container{
-    background-image: url(../img/03.png) ;
+.first-container1{
+  background-image: url(/src/img/03.png) ;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -26,7 +26,7 @@ h1 {
     margin-bottom: 2rem;
     color: #555;
 }
-.cadastro-container {
+.cadastro-container1 {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -41,7 +41,7 @@ h1 {
 
 
 
-.cadastro-box-left{
+.cadastro-box-left1{
 
 
     background: linear-gradient(to bottom, 
@@ -60,7 +60,7 @@ h1 {
      
 }
 
-.cadastro-box-rigt{
+.cadastro-box-rigt1{
 
 
     min-height: 70vh;
@@ -73,12 +73,12 @@ h1 {
     align-items: center;
 }
 
-.form-group {
+.form-group1 {
     margin-bottom: 1.5rem;
     text-align: center;
   }
   
-  .form-group label {
+  .form-group1 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -87,7 +87,7 @@ h1 {
     font-size: 14px;
   }
   
-  .form-group input {
+  .form-group1 input {
     width: 100%;
     padding: 10px;
     margin: 20px;
@@ -108,7 +108,7 @@ h1 {
     font-size: 17px;
   }
 
-  .entrar-btn {
+  .entrar-btn1 {
     width: 70%;
     padding: 12px;
     background-color: #272727;
@@ -124,11 +124,11 @@ h1 {
     font-weight: bold;
   }
   
-  .entrar-btn:hover {
+  .entrar-btn1:hover {
     background-color: #0c0c0c;
   }
 
-  .login{
+  .login1{
     width: 70%;
     padding: 12px;
     background-color: #272727;
@@ -143,6 +143,6 @@ h1 {
     font-weight: bold;
   }
 
-  .login:hover {
+  .login1:hover {
     background-color: #0c0c0c;
   }
