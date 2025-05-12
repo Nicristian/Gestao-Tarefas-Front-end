@@ -5,18 +5,28 @@
   text-decoration: none;
   color: inherit;
   outline: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
+
 
 .sidebar {
     width: 250px; /* Largura fixa da sidebar */
     background-color: #4a4a4a; /* Cor de fundo escura */
     color: white; /* Cor do texto */
     display: flex;
-    flex-direction: column; /* Organiza os itens em coluna */
+    flex-direction: column ; /* Organiza os itens em coluna */
     justify-content: space-between; /* Espaço entre topo e parte inferior */
     padding: 20px;
     height: 93.7%;
 
+  }
+  .sidebar-header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 60px;
   }
   .menu-list {
     list-style: none; /* Remove marcadores */
@@ -40,7 +50,7 @@
     margin-bottom: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: rgb(40, 40, 40);
+    color: rgb(5, 5, 5);
   }
 
   .user-section{

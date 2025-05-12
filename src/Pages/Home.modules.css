@@ -1,3 +1,16 @@
+.home{
+    display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaço entre os painéis */
+  width: 100%;
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o bloco principal */
+  padding: 40px 0px 0px 90px;
+  height: calc(100vh - 120px); /* Ajuste conforme o header/footer */
+}
+
+
 .main-content1 {
     flex: 1; /* Ocupa todo o espaço restante */
     background-color: white;

@@ -1,11 +1,11 @@
 import React from 'react'
 import "../Pages/Home.modules.css";
-import "../Pages/Calendario.modules.css";
+import "../Pages/CalendarioHome.modules.css";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import { Calendar } from 'react-calendar';
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
         <main className="main-content1">
         <div className="left-panel1">
           <div className="calendar-section1">

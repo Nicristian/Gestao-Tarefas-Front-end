@@ -1,36 +1,52 @@
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../Pages/CriarTarefa.modules.css"
 const CriarTarefa = () => {
-
+    const navigate = useNavigate();
     const [task, setTask] = useState({
         startDate: '',
         endDate: '',
         description: ''
       });
     
-      const handleChange = (e) => {
+    const handleChange = (e) => {
         const { name, value } = e.target;
         setTask(prev => ({
-          ...prev,
-          [name]: value
+            ...prev,
+            [name]: value
         }));
-      };
-    
-      const handleSubmit = (e) => {
+    };
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Tarefa adicionada:', task);
-        // Aqui você pode adicionar lógica para salvar a tarefa
-        alert('Tarefa adicionada com sucesso!');
-        setTask({
-          startDate: '',
-          endDate: '',
-          description: ''
-        });
-      };
+        
+        // Validação básica de datas
+        if (new Date(task.endDate) < new Date(task.startDate)) {
+            alert("A data final não pode ser anterior à data inicial!");
+            return;
+        }
+
+        // Recupera os dados existentes ou cria um array vazio
+        const existingData = JSON.parse(localStorage.getItem('tasks')) || []; // Mudei para 'tasks' (plural)
+
+        // Adiciona o novo formulário ao array com um ID único
+        const newTask = {
+            ...task,
+            id: Date.now() // Adiciona um ID único baseado no timestamp
+        };
+
+        const updatedData = [...existingData, newTask];
+
+        // Armazena os dados no localStorage
+        localStorage.setItem('tasks', JSON.stringify(updatedData));
+        
+        // Navega para a página de exibição
+        navigate('/calendario');
+    };
 
   return (
-    <div>
+    <div className='tarefas'>
         <div className="main-content">
        <div className="title">
        <h2>Aplicionar Nova Tarefa</h2>

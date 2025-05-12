@@ -1,72 +1,57 @@
+ .calendar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 30px 20px 0px 320px;
+    gap: 40px;
+    
+ }
+ .add-task-button{
+    background-color: rgb(120, 120, 120);
+    border: 0px;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+ }
 
-  
-  .calendar-section .calendar-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Calendário (react-calendar) personalizado */
-  .react-calendar {
+ .caleTitle{
+    display: flex;
+     justify-content: center;
+     gap: 70px;
+     align-items: center;
+ }
+
+   .react-calendar {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     background: white;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #000;
   }
-  
-  .react-calendar__navigation button {
-    color: #000;
-    min-width: 44px;
-    background: none;
-    font-size: 16px;
-    margin-top: 8px;
-    cursor: pointer;
-    border: none;
-  }
-  
-  .react-calendar__month-view__weekdays {
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-    color: #000000;
-  }
-  
-  .react-calendar__tile {
-    padding: 10px 6.6667px;
-    background: none;
-    text-align: center;
-    line-height: 16px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
-  }
-  
-  .react-calendar__tile--now {
-    background: #ffefc1;
-    border-radius: 4px;
-  }
-  
-  .react-calendar__tile--active {
-    background: #4a4a4a;
-    color: white;
-    border-radius: 4px;
-  }
-  
-  .react-calendar__month-view__days__day--weekend {
-    color: red;
-  }
-  
 
-  
-  .chat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
+
+
+ .tasks-list{
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: rgb(159, 159, 159);
+    width: 140%;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+ }
+
  
+
+ .task-details{
+    background-color: white;
+    flex-direction: row;
+    display: flex;
+     justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    
+ }

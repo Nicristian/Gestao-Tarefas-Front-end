@@ -1,4 +1,4 @@
-    .container {
+    .agenda-container {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -38,7 +38,7 @@
     border: none;
     cursor: pointer;
   }
-  .buttonPlus {
+  .buttonPlu {
     margin-right: 4px;
   }
   .searchContainer {

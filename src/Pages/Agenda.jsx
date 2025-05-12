@@ -37,7 +37,7 @@ const Agenda = () => {
 
   // Retorna a estrutura JSX do componente
   return (
-    <div className='container'>
+    <div className='agenda-container'>
         {/* Conteúdo principal */}
       <div className='mainContent'>
         {/* Cabeçalho */}
@@ -48,7 +48,7 @@ const Agenda = () => {
             onClick={handleAddTask} // Chama a função ao ser clicado
           >
             {/* Ícone de "+" e texto do botão */}
-           <Link className="nav-link" to="/criarTarefa"><span className='buttonPlus'>+</span> Criar Tarefas</Link> 
+           <Link className="nav-link" to="/criarTarefa"><span className='buttonPlu'>+</span> Criar Tarefas</Link> 
           </button>
           {/* Container da barra de busca (apenas ícone por enquanto) */}
           <div className='searchContainer'>
